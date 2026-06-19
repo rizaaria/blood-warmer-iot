@@ -38,24 +38,6 @@ This project demonstrates the integration of embedded systems, sensor acquisitio
 
 ## System Architecture
 
-```text
-DS18B20 Sensors
-        │
-        ▼
-     ESP32
-        │
- ┌──────┼──────┐
- │      │      │
- ▼      ▼      ▼
-OLED  Blynk  Buzzer
-        │
-        ▼
-    MOSFET Driver
-        │
-        ▼
- Nichrome Heater
-```
-
 ---
 
 ## Pin Configuration
@@ -81,127 +63,10 @@ OLED  Blynk  Buzzer
 
 ---
 
-## Project Structure
+## Blynk Dashboard
 
-```text
-blood-warmer-iot/
-│
-├── README.md
-├── LICENSE
-├── .gitignore
-│
-├── firmware/
-│   └── blood_warmer.ino
-│
-├── hardware/
-│   ├── wiring_diagram.png
-│   ├── schematic.pdf
-│   └── pcb_design.png
-│
-├── images/
-│   ├── prototype.jpg
-│   ├── oled_display.jpg
-│   ├── blynk_dashboard.jpg
-│   └── system_overview.png
-│
-├── docs/
-│   ├── project_report.pdf
-│   ├── testing_results.pdf
-│   └── user_manual.pdf
-│
-└── results/
-    ├── temperature_response.png
-    ├── heating_curve.png
-    └── experiment_data.csv
-```
+![Blynk Dashboard](images/blynk_dashboard.png)
 
----
+## Enclosure
 
-## Prototype
-
-### System Prototype
-
-![Prototype](images/prototype.jpg)
-
-### OLED Display
-
-![OLED](images/oled_display.jpg)
-
-### Blynk Dashboard
-
-![Blynk Dashboard](images/blynk_dashboard.jpg)
-
-### Wiring Diagram
-
-![Wiring Diagram](hardware/wiring_diagram.png)
-
----
-
-## Testing Results
-
-The system was tested to evaluate:
-
-- Temperature monitoring performance
-- Heater response characteristics
-- Sensor stability
-- Alarm functionality
-- Remote monitoring capability
-
-Example results include:
-
-- Heating response curve
-- Temperature stability analysis
-- Sensor accuracy evaluation
-- IoT communication performance
-
----
-
-## Software Requirements
-
-- Arduino IDE
-- ESP32 Board Package
-- Blynk Library
-- DallasTemperature Library
-- OneWire Library
-- Adafruit SSD1306 Library
-- Adafruit GFX Library
-
----
-
-## Future Improvements
-
-- PID temperature control
-- Battery-powered operation
-- Cloud database integration
-- Mobile push notifications
-- Data logging and analytics
-- Medical-grade enclosure design
-- Web dashboard monitoring
-
----
-
-## Applications
-
-- Biomedical engineering research
-- Blood transfusion support systems
-- Medical device prototyping
-- Temperature control systems
-- IoT healthcare applications
-
----
-
-## Author
-
-**Riza Aria Komara**
-
-Biomedical Engineering Student
-
-GitHub: https://github.com/USERNAME
-
-LinkedIn: https://linkedin.com/in/YOUR-LINKEDIN
-
----
-
-## License
-
-This project is released under the MIT License.
+![Enclosure](images/enclosure.png)
